@@ -1,0 +1,27 @@
+dnf -y install https://yum.puppet.com/puppet-release-el-9.noarch.rpm
+dnf -y install puppetserver 
+
+ vi /etc/puppetlabs/puppet/puppet.conf 
+confdir = /etc/puppetlabs/puppet
+dns_alt_names = proc1.noc.net,proc1
+environment = production
+[main]
+certname = proc1.noc.net
+server = proc1.noc.net
+
+dnf -y install https://yum.puppet.com/puppet-release-el-9.noarch.rpm
+dnf -y install puppet-agent 
+
+vi /etc/puppetlabs/puppet/puppet.conf 
+[main]
+certname = client1.noc.net
+server = proc1.noc.net
+
+[agent]
+server = proc1.noc.net
+ca_server = proc1.noc.net
+runinterval = 1m
+
+/opt/puppetlabs/server/bin/puppetserver ca list --all 
+/opt/puppetlabs/server/bin/puppetserver ca sign --certname client1.noc.net
+  
