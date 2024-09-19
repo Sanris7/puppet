@@ -1,0 +1,2 @@
+user_management::default_groups:
+  'client-specific': {}
