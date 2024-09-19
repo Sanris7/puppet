@@ -24,4 +24,7 @@ runinterval = 1m
 
 /opt/puppetlabs/server/bin/puppetserver ca list --all 
 /opt/puppetlabs/server/bin/puppetserver ca sign --certname client1.noc.net
+
+puppet apply
+puppet parser validate
   
