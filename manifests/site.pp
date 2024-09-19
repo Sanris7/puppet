@@ -1,6 +1,8 @@
 node 'client1.noc.net' {
-  include user_management::group_management
-  include user_management::normal_users 
+  include user_management::group_2
+  include user_management::shell
 }
-node default{
+
+node default {
 }
+
