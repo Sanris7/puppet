@@ -1,8 +1,12 @@
 class user_management::shell (
-  Hash $users = hiera('user_management::users', {}),
-  String $default_shell = hiera('user_management::default_shell', '/bin/zsh')
+  String $shell = hiera('user_management::default_shell')
 ) {
-  create_resources('user', $users)
+  user { 'morris':
+    ensure => 'present',
+    shell  => $shell,
+    gid    => 'developers',
+  }
 
-  notify { "Creating users with default shell: ${default_shell}": }
+  notify { "Creating user morris with shell: ${shell}": }
 }
+
