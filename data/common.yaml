@@ -1,1 +1,3 @@
-user_management::default_shell: '/bin/bash'
+user_management:
+  default_shell: '/sbin/nologin'
+  managehome: false
