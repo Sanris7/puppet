@@ -1,8 +1,8 @@
 class user_management::normal_users {
   $users = {
-    'davis' => {
-      'groups' => ['production'],
-	'managehome' => true,  	
+    'martin' => {
+      'uid'    => '1009',
+      'home'   => '/home/martin',
       'shell'  => '/bin/bash',
     },
   }

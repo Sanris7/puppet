@@ -1,4 +1,3 @@
-user_management::default_shell: '/bin/bash'
-user_management::default_gid: 'admin'
-user_management::default_groups: 'admin'
-user_management::managehome: false
+user_management::default_groups:
+  'www-data': {}
+  'admins': {}
