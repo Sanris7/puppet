@@ -1,6 +1,6 @@
 user <%= @name %> {
   ensure => present,
-  group  => '<%= @group %>',
-  home   => '<%= @home %>',
+  groups     => [<%= @groups.join(", ") %>],
+  managehome => true,  
   shell  => '<%= @shell %>',
   }

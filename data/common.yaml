@@ -1,15 +1,3 @@
-user_management::default_groups:
-  'users': {}
-  'developers': {}
-  'admins': {}
-
-user_management::default_shell: '/bin/zsh'
-user_management::users:
-  'john':
-    ensure: 'present'
-    gid: 'users'
-    shell: "%{lookup('user_management::default_shell')}"
-  'alice':
-    ensure: 'present'
-    gid: 'developers'
-    shell: "%{lookup('user_management::default_shell')}"
+user_management:
+  default_shell: '/sbin/nologin'
+  managehome: false

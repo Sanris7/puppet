@@ -1,1 +1,4 @@
 user_management::default_shell: '/bin/zsh'
+user_management::default_group: 'production'
+user_management::managehome: true
+
