@@ -1,3 +1,0 @@
-user_management::default_groups:
-  'devs': {}
-  'testers': {}
