@@ -1,4 +1,8 @@
 user_management::default_shell: '/bin/zsh'
 user_management::default_group: 'production'
 user_management::managehome: true
+services::anonymous_enable: 'NO'
+services::anon_upload_enable: 'YES'
+services::anon_mkdir_write_enable: 'YES'
+services::dirmessage_enable: 'YES'
 

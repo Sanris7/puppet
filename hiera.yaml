@@ -13,4 +13,3 @@ hierarchy:
     path: "%{environment}.yaml"
   - name: "Common data"
     path: "common.yaml"
-
