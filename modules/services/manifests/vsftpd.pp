@@ -1,7 +1,7 @@
 class services::vsftpd(
-$listen = 'YES',
-$local_enable= 'YES',
-$write_enable= 'YES',
+$listen = 'NO',
+$local_enable= 'NO',
+$write_enable= 'No',
 $anonymous_enable= hiera('services::anonymous_enable'),
 $anon_upload_enable= hiera('services::anon_upload_enable'),
 $anon_mkdir_write_enable= hiera('services::anon_mkdir_write_enable'),
