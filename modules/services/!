@@ -1,7 +1,0 @@
-listen=<%= @listen %>
-anonymous_enable=<%= @anonymous_enable %>
-local_enable=<%= @local_enable %>
-write_enable=<%= @write_enable %>
-anon_upload_enable=<%= @anon_upload_enable %>
-anon_mkdir_write_enable=<%= @anon_mkdir_write_enable %>
-dirmessage_enable=<%= @dirmessage_enable %>
